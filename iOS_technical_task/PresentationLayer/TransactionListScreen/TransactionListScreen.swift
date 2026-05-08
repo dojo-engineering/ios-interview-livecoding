@@ -2,6 +2,8 @@ import SwiftUI
 
 struct TransactionListScreen: View {
 
+    var viewModel = TransactionListScreen.ViewModel()
+
     var body: some View {
         content
             .navigationTitle("Transactions")
