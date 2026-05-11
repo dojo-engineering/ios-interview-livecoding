@@ -42,7 +42,6 @@ extension TransactionDTO {
                 value: Decimal(Double.random(in: -9999...9999)),
                 currency: "GBP"
             ),
-            status: TransactionStatusDTO.allCases.randomElement() ?? .completed,
             createdAt: Date.randomInPast(days: 30),
             merchantName: ["Dojo", "Acme", "Foo Bar"].randomElement() ?? "Dojo"
         )

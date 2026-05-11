@@ -25,7 +25,7 @@ The project contains a basic data layer and a stubbed-out `TransactionListScreen
 iOS_technical_task/
 ├── DataLayer/
 │   ├── Models/
-│   │   └── Transaction.swift       — Transaction, Amount, TransactionStatus
+│   │   └── TransactionDTO.swift       — Transaction, Amount
 │   └── TransactionsEndpoint.swift  — Mock endpoints + Endpoint<T> type
 ├── Networking/
 │   └── NetworkClient.swift         — Async GET helper
@@ -41,7 +41,6 @@ iOS_technical_task/
 | `id` | `UUID` | Unique transaction identifier |
 | `amount.value` | `Decimal` | Monetary value (can be negative for refunds) |
 | `amount.currency` | `String` | ISO 4217 currency code, e.g. `"GBP"` |
-| `status` | `TransactionStatus` | `PENDING` · `COMPLETED` · `FAILED` · `REFUNDED` |
 | `createdAt` | `Date` | Creation timestamp |
 | `merchantName` | `String` | Display name of the merchant |
 
